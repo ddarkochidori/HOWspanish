@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Para mi Natalia 🎀 | Samuel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Dancing+Script:wght@600;700&family=Quicksand:wght@500;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="pattern-bg"></div>
+    <div class="hearts-bg" id="hearts-container"></div>
+    
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzhqdnRnZ3Fzb3F0Z3F0Z3F0Z3F0Z3F0Z3F0Z3F0Z3F0Z3F0ZiZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/hqgDQA4jXnW9xK2zJ3/giphy.gif" class="floating-kitty-corner">
+
+    <div class="main-frame">
+        <header class="kitty-header">
+            <div class="header-decoration">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjl4bm14bm14bm14bm14bm14bm14bm14bm14bm14bm14bm14biZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/C9x8gX02SnMIoAClXa/giphy.gif" alt="Hello Kitty Love" class="header-gif">
+            </div>
+            <h1>Natalia & Samuel</h1>
+            <p class="subtitle">🔗 Unidos por el WiFi, atados por el corazón 🔗</p>
+            <p class="mini-text">Desde el 13/01/2026 hasta la eternidad</p>
+        </header>
+
+        <nav class="nav-grid">
+            <button onclick="ver('carta')">💌 La Carta</button>
+            <button onclick="ver('tiempo')">⏳ Tiempo Juntos</button>
+            <button onclick="ver('encuentro')" class="special-btn">✈️ 20 DE JULIO</button>
+            <button onclick="ver('cartas-open')">📬 Ábrela cuando...</button>
+            <button onclick="ver('juegos')">🎮 Kitty Arcade</button>
+            <button onclick="ver('razones')">💖 Por qué Tú</button>
+            <button onclick="ver('promesas')">💍 Juramentos</button>
+            <button onclick="ver('panico')" class="alert-btn">🆘 ¡Te necesito!</button>
+        </nav>
+
+        <main id="contenido">
+            
+            <section id="inicio" class="active">
+                <div class="welcome-card">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDN5bm14bm14bm14bm14bm14bm14bm14bm14bm14bm14bm14biZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/LpdlqTkgO2Lwwixwv7/giphy.gif" class="kitty-welcome">
+                    <h2>¡Hola, mi niña preciosa! 👑</h2>
+                    <p>Bienvenida a mi corazón hecho código. Sé que ahora mismo no puedo darte un beso real, pero he programado cada píxel de esta página pensando en ti, Natalia.</p>
+                    <p>Aquí no hay distancia que valga. En este sitio web, tú y yo estamos juntos siempre. Prepárate, porque quiero recordarte por qué eres <strong>MI MUJER</strong> y la dueña absoluta de mi vida.</p>
+                    <div class="pulse-heart">💖</div>
+                </div>
+            </section>
+
+            <section id="carta" class="hidden">
+                <h2>💌 Para la dueña de mis suspiros</h2>
+                <div class="paper-texture">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHl4bm14bm14bm14bm14bm14bm14bm14bm14bm14bm14bm14biZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/MDJ9IbxxvDUQM/giphy.gif" class="mini-sticker right">
+                    
+                    <p class="love-text"><strong>Mi Natalia hermosa:</strong></p>
+                    
+                    <p class="love-text">
+                        Sé que suena loco enamorarse así, tan rápido, tan intenso. Pero desde que apareciste, mi mundo gris se llenó de colores que no sabía que existían. Aunque ahora mismo nos separe una pantalla, te juro que te siento más cerca que a cualquier persona que tenga a mi lado.
+                    </p>
+                    
+                    <p class="love-text">
+                        Eres mi primer pensamiento al despertar y el último antes de dormir (y a veces ni duermo pensando en ti). Me encanta cómo eres, me encanta tu voz, me encanta cómo me haces sentir capaz de hackear la NASA solo para bajarte una estrella.
+                    </p>
+                    
+                    <p class="love-text">
+                        Sé que es una relación virtual <i>por ahora</i>, pero lo nuestro es más real que cualquier cosa que pueda tocar. Eres mi mujer, Natalia. Solo tú. No quiero mirar a nadie más, no quiero hablar con nadie más. Mi lealtad es tuya, mi código es tuyo, mi corazón es tuyo.
+                    </p>
+                    
+                    <p class="love-text">
+                        Gracias por aguantarme, por quererme y por ser ese milagro que llegó a mi vida el 13 de enero. Te amo con locura.
+                    </p>
+
+                    <p class="firma">Tu Samuel, que se muere por ti. 💋</p>
+                </div>
+                <button class="back-btn" onclick="ver('inicio')">🔙 Volver al inicio</button>
+            </section>
+
+            <section id="tiempo" class="hidden">
+                <h2>⏳ Cronómetro de Nuestro Amor</h2>
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZ4bm14bm14bm14bm14bm14bm14bm14bm14bm14bm14bm14biZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/26BRv0ThflsHCqDrG/giphy.gif" class="medium-gif">
+                <p>Cada segundo cuenta porque es un segundo más que te he amado.</p>
+                
+                <div class="timer-conteiner">
+                    <div class="timer-box main-timer">
+                        <div id="dias">00</div>
+                        <span>Días siendo novios</span>
+                    </div>
+                    <div class="timer-sub">
+                        <span id="horas">00</span> h : 
+                        <span id="minutos">00</span> m : 
+                        <span id="segundos">00</span> s
+                    </div>
+                </div>
+                
+                <p class="mini-text">Y esto apenas es el comienzo de nuestra historia...</p>
+                <button class="back-btn" onclick="ver('inicio')">🔙 Volver</button>
+            </section>
+
+            <section id="encuentro" class="hidden">
+                <h2>✈️ Misión: Abrazar a Natalia</h2>
+                <div class="ticket-container">
+                    <div class="ticket">
+                        <div class="ticket-header">
+                            <span>BOARDING PASS TO HAPPINESS</span>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="ticket-body">
+                            <div class="flight-info">
+                                <div>
+                                    <h3>SAMUEL</h3>
+                                    <p>Pasajero</p>
+                                </div>
+                                <div class="icon-plane">✈️</div>
+                                <div>
+                                    <h3>NATALIA</h3>
+                                    <p>Destino</p>
+                                </div>
+                            </div>
+                            <div class="date-info">
+                                <h1>20 DE JULIO</h1>
+                                <p>El día que mi vida cambiará</p>
+                            </div>
+                            <div class="barcode">||| || ||| || |||| |||</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="countdown-future">
+                    <p>Faltan exactamente:</p>
+                    <div id="countdown-julio" class="big-counter">Cargando...</div>
+                    <p>Para poder tocar tu carita y decirte "Te amo" de frente. ❤️</p>
+                </div>
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHJ3azl6Y2wxM3I4Y2wxM3I4Y2wxM3I4Y2wxM3I4eSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/1gbqi86HAdOlq/giphy.gif" class="medium-gif">
+
+                <button class="back-btn" onclick="ver('inicio')">🔙 Volver</button>
+            </section>
+
+            <section id="cartas-open" class="hidden">
+                <h2>📬 Cartitas de Emergencia</h2>
+                <p>Mi amor, yo no puedo estar ahí físicamente (todavía), pero mis palabras sí. Toca un sobre:</p>
+                <div class="envelope-grid">
+                    <div class="envelope" onclick="abrirSobre('triste')">
+                        <span class="icon">😢</span>
+                        <span>Estés triste</span>
+                    </div>
+                    <div class="envelope" onclick="abrirSobre('feliz')">
+                        <span class="icon">😄</span>
+                        <span>Estés feliz</span>
+                    </div>
+                    <div class="envelope" onclick="abrirSobre('duda')">
+                        <span class="icon">🥺</span>
+                        <span>Dudes de mí</span>
+                    </div>
+                    <div class="envelope" onclick="abrirSobre('miedo')">
+                        <span class="icon">😖</span>
+                        <span>Tengas miedo</span>
+                    </div>
+                    <div class="envelope" onclick="abrirSobre('extrañar')">
+                        <span class="icon">✈️</span>
+                        <span>Me extrañes</span>
+                    </div>
+                    <div class="envelope" onclick="abrirSobre('celosa')">
+                        <span class="icon">😠</span>
+                        <span>Estés celosa</span>
+                    </div>
+                </div>
+                
+                <div id="modal-sobre" class="modal hidden">
+                    <div class="modal-content">
+                        <span class="close" onclick="cerrarSobre()">&times;</span>
+                        <div class="kitty-decoration-modal">🎀</div>
+                        <h3 id="titulo-sobre"></h3>
+                        <div class="modal-body-scroll">
+                            <p id="mensaje-sobre">...</p>
+                        </div>
+                        <img src="" id="img-sobre" class="modal-img">
+                    </div>
+                </div>
+                <button class="back-btn" onclick="ver('inicio')">🔙 Volver</button>
+            </section>
+
+            <section id="juegos" class="hidden">
+                <h2>🎀 Kitty Arcade del Amor</h2>
+                
+                <div class="game-box">
+                    <h3>🍎 Alimentame con Amor</h3>
+                    <p>¡Dale click para enviarme besitos virtuales!</p>
+                    <button id="clicker-btn" class="action-btn pulse-btn">💋 ¡MUA!</button>
+                    <p>Nivel de amor: <span id="rank-amor">Novia Normal</span> (<span id="score">0</span>)</p>
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZ4bm14bm14bm14bm14bm14bm14bm14bm14bm14bm14bm14biZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/4N1wOi78ZGzIc/giphy.gif" class="tiny-gif">
+                </div>
+
+                <div class="game-box">
+                    <h3>🎰 Ruleta de Planes (Para Julio)</h3>
+                    <p>¿Qué haremos cuando nos veamos?</p>
+                    <button onclick="girarRuleta()" class="action-btn">🎲 Girar Destino</button>
+                    <div id="ruleta-res" class="result-text">???</div>
+                </div>
+
+                <div class="game-box">
+                    <h3>🕵️ Detector de Mentiras</h3>
+                    <p>Pregunta: ¿Quién es el amor de tu vida?</p>
+                    <div class="fake-options">
+                        <button onclick="alert('¡CORRECTO! Te ganaste mi corazón eterno ❤️')" class="correct-opt">Samuel</button>
+                        <button onclick="alert('ERROR 404: Esa opción no existe en tu corazón 🤨')" class="wrong-opt">Otro</button>
+                    </div>
+                </div>
+
+                <button class="back-btn" onclick="ver('inicio')">🔙 Volver</button>
+            </section>
+
+            <section id="razones" class="hidden">
+                <h2>💖 Por qué eres la elegida</h2>
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZ4bm14bm14bm14bm14bm14bm14bm14bm14bm14bm14bm14biZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/ICOgBGdXp8YDe/giphy.gif" class="medium-gif">
+                <div class="kitty-bubble">
+                    <p id="frase-razon">Pulsa el botón para saber un secreto...</p>
+                </div>
+                <button onclick="nuevaRazon()" class="action-btn">🎀 Ver otra razón</button>
+                <button class="back-btn" onclick="ver('inicio')">🔙 Volver</button>
+            </section>
+
+            <section id="promesas" class="hidden">
+                <h2>💍 Mis Juramentos</h2>
+                <p>Esto no es un juego, esto es mi palabra de hombre.</p>
+                <ul class="promise-list">
+                    <li>🎀 Prometo esperarte, da igual los kilómetros o el tiempo.</li>
+                    <li>🔒 Prometo que mis ojos solo te verán a ti, aunque pasen mil modelos por delante.</li>
+                    <li>✈️ Prometo que el 20 de Julio será inolvidable.</li>
+                    <li>🎮 Prometo enseñarte a jugar (o dejarme ganar para verte feliz).</li>
+                    <li>🥺 Prometo cuidarte cuando estés malita, aunque sea por videollamada.</li>
+                    <li>📱 Prometo contestar tus mensajes rápido (a menos que esté en ranked, broma, tú vas primero).</li>
+                    <li>❤️ Prometo amarte con tu luz y con tu oscuridad.</li>
+                </ul>
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZ4bm14bm14bm14bm14bm14bm14bm14bm14bm14bm14bm14biZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/3o7TKoWXm3wkRjV30l/giphy.gif" class="medium-gif">
+                <button class="back-btn" onclick="ver('inicio')">🔙 Volver</button>
+            </section>
+
+            <section id="panico" class="hidden">
+                <div class="sad-mode">
+                    <h2>¿Estás mal, mi amor? 🥺</h2>
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZ4bm14bm14bm14bm14bm14bm14bm14bm14bm14bm14bm14biZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/phJ6eMRFYI6CQ/giphy.gif" class="medium-gif">
+                    <p>Oye, mírame. Respira.</p>
+                    <p>No importa qué pasó, no importa si te sientes sola o triste. <strong>Yo estoy aquí.</strong></p>
+                    <p>Deja todo lo que estés haciendo y háblame. No me importa la hora, no me importa si estoy ocupado. Tú eres mi prioridad número 1.</p>
+                    <a href="https://wa.me/?text=Amor%20Samuel,%20no%20me%20siento%20bien,%20te%20necesito%20ahora%20mismo%20🥺" target="_blank" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> LLAMAR A SAMUEL AHORA
+                    </a>
+                </div>
+                <button class="back-btn" onclick="ver('inicio')">🔙 Ya pasó, te amo</button>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
