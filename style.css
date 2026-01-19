@@ -1,0 +1,227 @@
+/* CONFIGURACIÓN GENERAL Y FUENTES */
+:root {
+    --red: #ff4757;
+    --pink-dark: #ff6b81;
+    --pink-medium: #ffa502; /* Un toque dorado para contrastar */
+    --pink-light: #ffeaa7;
+    --pink-pastel: #ffe4e1;
+    --white: #ffffff;
+    --text: #2f3542; 
+    --shadow: rgba(255, 71, 87, 0.3);
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fce4ec; /* Rosa muy pálido */
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+    cursor: url('https://cur.cursors-4u.net/holidays/hol-4/hol387.cur'), auto; /* Cursor opcional lindo */
+}
+
+/* FONDO DE PATRÓN */
+.pattern-bg {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* HELLO KITTY FLOTANTE */
+.floating-kitty-corner {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    z-index: 100;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* MARCO PRINCIPAL */
+.main-frame {
+    position: relative;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    max-width: 480px;
+    margin: 20px auto;
+    border-radius: 30px;
+    padding: 25px;
+    border: 5px solid #ff9ff3;
+    box-shadow: 0 15px 35px rgba(255, 105, 180, 0.4);
+    text-align: center;
+}
+
+/* HEADER */
+.kitty-header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: #ff6b81;
+    margin: 5px 0;
+    text-shadow: 2px 2px 0px #ffeaa7;
+}
+.header-gif { width: 120px; margin-bottom: -10px; }
+.subtitle {
+    font-family: 'Fredoka', sans-serif;
+    color: #ff4757;
+    background: #ffda79;
+    padding: 5px 15px;
+    border-radius: 15px;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* NAVEGACIÓN */
+.nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+button {
+    background: var(--white);
+    border: 2px solid #ff9ff3;
+    color: #ff6b81;
+    border-radius: 20px;
+    padding: 12px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 0 #ff9ff3;
+}
+button:active { transform: translateY(4px); box-shadow: none; }
+.special-btn {
+    grid-column: span 2;
+    background: linear-gradient(45deg, #ff9ff3, #feca57);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 0 #ff6b81;
+    animation: glow 2s infinite alternate;
+}
+@keyframes glow { from { filter: brightness(1); } to { filter: brightness(1.1); } }
+
+.alert-btn {
+    grid-column: span 2;
+    background: #ff4757;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 0 #c0392b;
+}
+
+/* TICKET DORADO (NUEVO) */
+.ticket-container { margin: 20px 0; perspective: 1000px; }
+.ticket {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 2px dashed #ccc;
+    position: relative;
+    background: linear-gradient(to right, #fff 70%, #feca57 70%);
+}
+.ticket-header {
+    background: #ff6b81;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.ticket-body { padding: 15px; text-align: left; }
+.flight-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.flight-info h3 { margin: 0; font-size: 1.1rem; color: #2f3542; }
+.flight-info p { margin: 0; font-size: 0.8rem; color: #747d8c; }
+.icon-plane { font-size: 1.5rem; color: #ff4757; animation: fly 3s infinite linear; }
+@keyframes fly { 0% { transform: translateX(-5px); } 50% { transform: translateX(5px) translateY(-2px); } 100% { transform: translateX(-5px); } }
+.date-info h1 { margin: 0; color: #ff4757; font-size: 1.8rem; text-align: center; }
+.date-info p { text-align: center; margin: 5px 0 0; font-style: italic; font-size: 0.8rem; }
+.barcode { font-family: 'Libre Barcode 39', cursive; font-size: 2rem; text-align: center; margin-top: 10px; opacity: 0.5; letter-spacing: 2px; }
+
+/* CONTADORES */
+.big-counter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff4757;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ff9ff3;
+    margin: 10px 0;
+    font-family: 'Fredoka', sans-serif;
+}
+.timer-box { font-size: 3rem; font-weight: bold; color: #ff6b81; }
+
+/* SOBRES */
+.envelope-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.envelope {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #feca57;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #57606f;
+}
+.envelope:hover { background: #fff2cc; transform: scale(1.02); }
+
+/* JUEGOS */
+.game-box {
+    background: white;
+    border: 2px solid #ff9ff3;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.fake-options { display: flex; gap: 10px; justify-content: center; }
+.correct-opt { background: #2ed573; color: white; border: none; }
+.wrong-opt { background: #ff4757; color: white; border: none; }
+
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+.modal-content {
+    background: #fff0f5;
+    padding: 20px;
+    border-radius: 20px;
+    width: 85%;
+    max-width: 400px;
+    position: relative;
+    border: 4px solid #ff6b81;
+}
+.modal-img { width: 100%; border-radius: 10px; }
+
+/* UTILIDADES */
+.hidden { display: none; }
+.active { display: block; animation: slideUp 0.5s ease; }
+@keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+.back-btn { background: #747d8c; border-color: #57606f; color: white; margin-top: 15px; width: 100%; box-shadow: 0 4px 0 #57606f; }
+
+/* CORAZONES ANIMADOS DE FONDO (JS) */
+.floating-heart {
+    position: absolute;
+    color: #ff6b81;
+    opacity: 0.5;
+    animation: floatTop 5s linear forwards;
+}
+@keyframes floatTop { to { transform: translateY(-100vh) rotate(360deg); } }
